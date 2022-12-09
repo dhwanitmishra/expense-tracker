@@ -1,5 +1,4 @@
 import { ExpenseItem } from "./Components/ExpenseItem";
-
 function App() {
   const expenses = [
     { title: 'Car Insurance', amount: 10000, date: new Date(2022, 11, 1) },
