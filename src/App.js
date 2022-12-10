@@ -1,4 +1,4 @@
-import { Expenses } from "./Components/Expenses";
+import { Expenses } from "./Components/Expenses/Expenses";
 
 function App() {
   const expenses = [
@@ -7,7 +7,6 @@ function App() {
     { title: 'Fuel', amount: 500, date: new Date(2022, 11, 10) },
     { title: 'Clothes', amount: 200, date: new Date(2022, 11, 12) },
   ];
-  // console.log(expenses[0].date)
   return (
     <div>
       <h2>Expense Tracker</h2>
