@@ -8,9 +8,15 @@ function App() {
     { title: 'Fuel', amount: 500, date: new Date(2022, 11, 10) },
     { title: 'Clothes', amount: 200, date: new Date(2022, 11, 12) },
   ];
+
+  const addExpenseHandler = (expense) => {
+    console.log('In App.js');
+    console.log(expense);
+  }
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
       </div>
   );
